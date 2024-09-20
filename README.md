@@ -7,6 +7,7 @@
    map the relationships between the various entities involved in the crowdfunding dataset.
 
 # Table of Contents
+   
    • Project Overview
    • Technologies Used
    • Installation
@@ -16,12 +17,14 @@
    • Database Schema
    
 # Project Overview
+  
   The project involves building an ETL pipeline to extract data from Excel files (crowdfunding.xlsx and contacts.xlsx), transform it using Pandas, and load 
   it into a PostgreSQL database. The final output is stored in four CSV files: category.csv, subcategory.csv, campaign.csv, and contacts.csv. These CSV files 
   are then imported into the PostgreSQL database, where they are structured according to a predefined schema. This repository contains all the files and 
   instructions needed to set up and run the project.
   
 # Technologies Used
+   
    • Python: Core programming language for the ETL pipeline.
    • Pandas: For data manipulation and transformation.
    • PostgreSQL: Database for storing the processed data.
@@ -31,6 +34,7 @@
    •  QuickDBD: For creating the ERD (Entity-Relationship Diagram).
    
 # Usage
+   
    1. Run the ETL process:
       o The ETL process is implemented in the Jupyter Notebook named ETL_Mini_Project_Final.ipynb.
       o Open the notebook in Jupyter and follow the instructions to extract, transform, and load the data.
@@ -47,12 +51,15 @@
       
 
 # Entity-Relationship Diagram
+   
    The ERD below illustrates the relationships between the campaign, category, subcategory, and contacts tables:
    
    ![CrowdFunding_ERD_QuickDBD](https://github.com/user-attachments/assets/86f31648-e369-49c0-87d7-9a90460e17b6)
 
 # Database Schema
+   
    The database schema is defined in CrowdFunding_db_Scheme.sql and includes the following tables:
+   
    • campaign
      o cf_id: Serial primary key
      o contact_id: Foreign key linking to the contacts table
